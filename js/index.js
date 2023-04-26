@@ -55,6 +55,8 @@ const app = {
     },
     addMarker(lat, lon) {
         var marker = L.marker([lat, lon]).addTo(app.map);
+        marker.bindPopup("lat: " + lat + "<br>lon: " + lon).openPopup();
+
         // voeg een marker toe op lat, lon
 
 
